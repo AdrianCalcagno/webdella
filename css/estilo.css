@@ -123,9 +123,14 @@ bottom: -250px;
   transition: all 0.2s ease;
   }
 
-.boton-della-encabezado {
+  #encabezadoSm{
+    visibility: hidden !important;
+    margin-top: -20px;
+  }
+
+.boton-della-encabezado{
   color: #AB6550 !important;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 0.5em 1em;
   background-color: white;
@@ -133,7 +138,29 @@ bottom: -250px;
   border-color: #AB6550;
   position: relative;
   border-radius: 10px;
+  box-sizing: border-box;
 }
+
+.boton-della-encabezado-sm{
+  color: #AB6550 !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 2px solid;
+  border-color: #AB6550;
+  position: relative;
+  border-radius: 10px;
+  box-sizing: border-box;
+  visibility: hidden !important;
+}
+
+.boton-della-encabezado-sm:hover{
+  color: #AB6550 !important;
+  box-shadow: 0 4px 16px #AB6550;
+  transition: all 0.2s ease;
+  }
+
 .boton-della-encabezado:hover {
   color: #AB6550 !important;
   box-shadow: 0 4px 16px #AB6550;
@@ -557,15 +584,34 @@ overflow:hidden;
   
 /* Finaliza Pricing */
 
+.chisteImg{
+display: block;
+font-size: 3rem;
+color: brown;
+}
+
 /* Media */
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
+    background: url("https://masteres.ugr.es/marketing/sites/master/marketing/public/imagenes/cabecera/2021-05/grupo-m%C3%A1rketing.jpg") black no-repeat center center scroll;
+          }
 
   header video {
     display: none;
-  }
+                }
 
-}
+  } 
+ 
+ @media (max-width: 340px) { 
+
+#encabezadoLg{
+  display: none;
+} 
+
+#encabezadoSm{
+  visibility: visible !important;
+  display: block;
+} 
+
+} 
