@@ -1,0 +1,23 @@
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://masteres.ugr.es/marketing/sites/master/marketing/public/imagenes/cabecera/2021-05/grupo-m%C3%A1rketing.jpg") black no-repeat center center scroll;
+          }
+
+  header video {
+    display: none;
+                }
+
+  } 
+ 
+ @media (max-width: 340px) { 
+
+#encabezadoLg{
+  display: none;
+} 
+
+#encabezadoSm{
+  visibility: visible !important;
+  display: block;
+} 
+
+} 
