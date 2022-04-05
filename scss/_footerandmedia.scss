@@ -1,3 +1,28 @@
+#seguinosRedes{
+  display: inline-flex;
+  align-items: center;
+}
+
+#formMargin{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#formMarginCopy{
+background-color: rgba(0, 0, 0, 0.2);
+margin-top: 0;
+margin-bottom: 0;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+
+.bottom{
+bottom: -250px;
+}
+
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url("https://masteres.ugr.es/marketing/sites/master/marketing/public/imagenes/cabecera/2021-05/grupo-m%C3%A1rketing.jpg") black no-repeat center center scroll;

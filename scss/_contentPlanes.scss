@@ -1,3 +1,42 @@
+#whatsapp{
+  display: flex;
+  justify-content: right;
+  vertical-align: bottom;
+  position:fixed;
+  bottom:30px;
+  right:40px;
+  z-index:100;
+}
+
+.masChico{
+  width: 80px !important;
+}
+
+//Nav-Bar
+
+.masChicoLogo{
+  width: 150px;
+}
+
+.bg-della{
+background-color: #AB6550;
+opacity: 0.95;
+}
+
+.navFont{
+font-size: 1rem;
+color: white;
+}
+
+.fontBlack{
+color: black;
+}
+
+#nav ul li a:hover{
+font-weight: 600;
+}
+
+
 /* Inicia Pricing */
 
 #generic_price_table{

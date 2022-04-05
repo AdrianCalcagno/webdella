@@ -43,6 +43,47 @@ header .overlay {
   z-index: 1;
 }
 
+//Nav-Bar
+
+.masChicoLogo{
+  width: 150px;
+}
+
+.bg-della{
+background-color: #AB6550;
+opacity: 0.95;
+}
+
+.navFont{
+font-size: 1rem;
+color: white;
+}
+
+.fontBlack{
+color: black;
+}
+
+#nav ul li a:hover{
+font-weight: 600;
+}
+
+// Icono whatsapp
+
+#whatsapp{
+  display: flex;
+  justify-content: right;
+  vertical-align: bottom;
+  position:fixed;
+  bottom:30px;
+  right:40px;
+  z-index:100;
+}
+
+.masChico{
+  width: 80px !important;
+}
+
+
 /*Clases propias*/
 
 
@@ -55,7 +96,7 @@ background-color: black;
   color: white;
 }
 
-.boton-della {
+.boton-della{
   color: #AB6550 !important;
   font-size: 1rem;
   font-weight: 600;
@@ -65,11 +106,11 @@ background-color: black;
   border-color: #AB6550;
   position: relative;
   border-radius: 10px;
-}
-.boton-della:hover {
+  &:hover{
   color: #AB6550 !important;
   box-shadow: 0 4px 16px #AB6550;
   transition: all 0.2s ease;
+          }
   }
 
   #encabezadoSm{
@@ -79,7 +120,7 @@ background-color: black;
 
 .boton-della-encabezado{
   color: #AB6550 !important;
-  font-size: 1.2rem;
+  font-size: map-get($map:$textSize,$key:'small');
   font-weight: 600;
   padding: 0.5em 1em;
   background-color: white;
@@ -88,32 +129,21 @@ background-color: black;
   position: relative;
   border-radius: 10px;
   box-sizing: border-box;
-}
-
-.boton-della-encabezado-sm{
-  color: #AB6550 !important;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.5em 1em;
-  background-color: white;
-  border: 2px solid;
-  border-color: #AB6550;
-  position: relative;
-  border-radius: 10px;
-  box-sizing: border-box;
-  visibility: hidden !important;
-}
-
-.boton-della-encabezado-sm:hover{
+  &:hover{
   color: #AB6550 !important;
   box-shadow: 0 4px 16px #AB6550;
   transition: all 0.2s ease;
+          }
   }
 
-.boton-della-encabezado:hover {
+.boton-della-encabezado-sm{
+@extend .boton-della-encabezado;
+  visibility: hidden !important;
+  &:hover{
   color: #AB6550 !important;
   box-shadow: 0 4px 16px #AB6550;
   transition: all 0.2s ease;
+        }
   }
 
 .efectoImg{
@@ -126,7 +156,7 @@ background-color: black;
 }
 
 .chisteImg{
-display: block;
-font-size: 3rem;
-color: brown;
+
+@include textoChistes(block,3rem,brown) 
+
 }

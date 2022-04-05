@@ -2,35 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-.masChicoLogo {
-  width: 150px; }
-
-.bg-della {
-  background-color: #AB6550;
-  opacity: 0.95; }
-
-.navFont {
-  font-size: 1rem;
-  color: white; }
-
-.fontBlack {
-  color: black; }
-
-#nav ul li a:hover {
-  font-weight: 600; }
-
-#whatsapp {
-  display: flex;
-  justify-content: right;
-  vertical-align: bottom;
-  position: fixed;
-  bottom: 30px;
-  right: 40px;
-  z-index: 100; }
-
-.masChico {
-  width: 80px; }
-
 a {
   text-decoration: none; }
 
@@ -70,6 +41,35 @@ header .overlay {
   opacity: 0.5;
   z-index: 1; }
 
+.masChicoLogo {
+  width: 150px; }
+
+.bg-della {
+  background-color: #AB6550;
+  opacity: 0.95; }
+
+.navFont {
+  font-size: 1rem;
+  color: white; }
+
+.fontBlack {
+  color: black; }
+
+#nav ul li a:hover {
+  font-weight: 600; }
+
+#whatsapp {
+  display: flex;
+  justify-content: right;
+  vertical-align: bottom;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100; }
+
+.masChico {
+  width: 80px !important; }
+
 /*Clases propias*/
 .bg-copyright {
   background-color: black; }
@@ -87,19 +87,18 @@ header .overlay {
   border-color: #AB6550;
   position: relative;
   border-radius: 10px; }
-
-.boton-della:hover {
-  color: #AB6550 !important;
-  box-shadow: 0 4px 16px #AB6550;
-  transition: all 0.2s ease; }
+  .boton-della:hover {
+    color: #AB6550 !important;
+    box-shadow: 0 4px 16px #AB6550;
+    transition: all 0.2s ease; }
 
 #encabezadoSm {
   visibility: hidden !important;
   margin-top: -20px; }
 
-.boton-della-encabezado {
+.boton-della-encabezado, .boton-della-encabezado-sm {
   color: #AB6550 !important;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 0.5em 1em;
   background-color: white;
@@ -108,29 +107,17 @@ header .overlay {
   position: relative;
   border-radius: 10px;
   box-sizing: border-box; }
+  .boton-della-encabezado:hover, .boton-della-encabezado-sm:hover {
+    color: #AB6550 !important;
+    box-shadow: 0 4px 16px #AB6550;
+    transition: all 0.2s ease; }
 
 .boton-della-encabezado-sm {
-  color: #AB6550 !important;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0.5em 1em;
-  background-color: white;
-  border: 2px solid;
-  border-color: #AB6550;
-  position: relative;
-  border-radius: 10px;
-  box-sizing: border-box;
   visibility: hidden !important; }
-
-.boton-della-encabezado-sm:hover {
-  color: #AB6550 !important;
-  box-shadow: 0 4px 16px #AB6550;
-  transition: all 0.2s ease; }
-
-.boton-della-encabezado:hover {
-  color: #AB6550 !important;
-  box-shadow: 0 4px 16px #AB6550;
-  transition: all 0.2s ease; }
+  .boton-della-encabezado-sm:hover {
+    color: #AB6550 !important;
+    box-shadow: 0 4px 16px #AB6550;
+    transition: all 0.2s ease; }
 
 .efectoImg {
   transition: transform .5s;
@@ -144,6 +131,35 @@ header .overlay {
   display: block;
   font-size: 3rem;
   color: brown; }
+
+#whatsapp {
+  display: flex;
+  justify-content: right;
+  vertical-align: bottom;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100; }
+
+.masChico {
+  width: 80px !important; }
+
+.masChicoLogo {
+  width: 150px; }
+
+.bg-della {
+  background-color: #AB6550;
+  opacity: 0.95; }
+
+.navFont {
+  font-size: 1rem;
+  color: white; }
+
+.fontBlack {
+  color: black; }
+
+#nav ul li a:hover {
+  font-weight: 600; }
 
 /* Inicia Pricing */
 #generic_price_table {
